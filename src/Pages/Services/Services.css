@@ -1,0 +1,126 @@
+/* Container Styles */
+.services-container {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    width: 100%
+}
+
+.services-main-container {
+    padding: 48px
+}
+
+.services-main {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 760px) {
+    .services-main-container {
+        padding: 16px
+    }
+}
+
+/* Intro Section */
+.intro {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 120px 16px 16px 16px;
+    gap: 12px;
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+}
+
+.hero-image {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.intro h1 {
+    font-size: 36px;
+    color: #333;
+}
+
+.intro p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Services */
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 20px;
+
+}
+
+.service {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 24px;
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+}
+
+.service h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.service ul {
+    list-style: none;
+    padding: 0;
+    margin: 0px
+}
+
+.service li {
+    font-size: 16px;
+    color: #555;
+    margin: 0px;
+    line-height: 32px;
+}
+
+/* Industries Served with Background Image */
+.industries-served {
+    background: url("../../assets/sections/hero/hero.jpg") no-repeat center center;
+    background-size: cover;
+    padding: 40px;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.industries-served h2 {
+    font-size: 28px;
+}
+
+.industries-served p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.industries-served ul {
+    list-style: none;
+    padding: 0;
+}
+
+.industries-served li {
+    font-size: 16px;
+}
+
+.service-image {
+    width: 100%;
+    object-fit: cover;
+    height: 250px;
+    border-radius: 12px;
+}
