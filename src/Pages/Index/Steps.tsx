@@ -1,46 +1,48 @@
 import step1Image from "../../assets/sections/hero/hero.jpg";
 
 export const StepsData = [
-  {
-    id: 1,
-    title: "Who we are?",
-    description: [
-      "West Hova Integrated Solutions over the years has established itself as a significant and rapidly-growing indigenous company in Nigeria.",
-      "We focus on Independent Hydrocarbon inspection, Upstream Oil and Gas Technical services, Personnel Training, Logistics, and Maritime operations.",
-      "Since our establishment in 2016, we have consistently provided top-tier services across these sectors.",
-      "Our company is committed to delivering value and supporting the growth of energy-related industries.",
-      "We maintain a global network and partner with various stakeholders to expand our reach and capabilities.",
-      "Start your journey today by contacting us and exploring how we can assist with your energy-related needs.",
-    ],
-    cta: "Contact Us",
-    image: step1Image,
-  },
-  {
-    id: 2,
-    title: "Our Vision and Mission",
-    description: [
-      "VISION: To become Africa’s leading Energy support services and Independent Inspection Company.",
-      "Our vision includes expanding our local and global operations, enhancing our partnerships with key stakeholders.",
-      "MISSION: To responsibly trade in the global Energy, Maritime, Oil and Gas industry, offering sustainable and cost-effective services.",
-      "We aim to provide value to our stakeholders, ensuring growth and success for both the company and our clients.",
-      "Our mission emphasizes integrity, responsibility, and a dedication to meeting the highest standards in every service we offer.",
-      "Partner with us to bring about a change in the energy industry through innovation and professional services.",
-    ],
-    cta: "Contact Us",
-    image: step1Image,
-  },
-  {
-    id: 3,
-    title: "Our Values",
-    description: [
-      "At West Hova Integrated Solutions, we uphold core values that guide all our operations.",
-      "Our values include integrity, reliability, competence, excellence, safety, and professionalism in everything we do.",
-      "We ensure that our partners, communities, customers, and investors experience the best service while maintaining ethical practices.",
-      "Our commitment to these values helps us maintain long-term relationships and deliver quality results.",
-      "We aim to build trust through transparent and effective communication with all parties involved.",
-      "Join us as we continue to grow and make a positive impact in the energy and maritime sectors.",
-    ],
-    cta: "Contact Us",
-    image: step1Image,
-  },
-];
+    {
+      id: 1,
+      title: "Who We Are",
+      description: [
+        "West Hova Integrated Solutions is a leading indigenous oilfield services and energy solutions provider in Nigeria.",
+        "Since 2016, we have specialized in Independent Hydrocarbon Inspection, Drilling Support, Pipeline Integrity Management, HSE Compliance, and Oilfield Logistics.",
+        "Our expertise spans the upstream and downstream sectors, ensuring operational efficiency and compliance for our clients.",
+        "We are committed to delivering innovative, cost-effective, and sustainable energy solutions that drive industry growth.",
+        "Through strategic partnerships, cutting-edge technology, and a skilled workforce, we continuously exceed industry standards.",
+        "Reach out to us today to explore how our tailored solutions can enhance your operations.",
+      ],
+      cta: "Contact Us",
+      image: step1Image,
+    },
+    {
+      id: 2,
+      title: "Our Vision and Mission",
+      description: [
+        "Vision: To be Africa’s foremost provider of oilfield services and independent inspection solutions, setting industry benchmarks through innovation and strategic partnerships.",
+        "We strive to redefine operational excellence in the energy sector by integrating global best practices into our service delivery.",
+        "Mission: To deliver world-class energy support services with a focus on safety, quality, and sustainability.",
+        "Our mission is to provide cost-effective, reliable, and compliant solutions that enhance productivity and reduce risks in oil & gas operations.",
+        "We are dedicated to building long-term relationships with clients, fostering growth, and contributing to the advancement of Nigeria’s energy industry.",
+        "Partner with us to optimize your operations and achieve outstanding results in the oil and gas sector.",
+      ],
+      cta: "Contact Us",
+      image: step1Image,
+    },
+    {
+      id: 3,
+      title: "Our Core Values",
+      description: [
+        "At West Hova Integrated Solutions, our operations are guided by unwavering principles:",
+        "- Integrity – We operate with transparency, honesty, and ethical business practices.",
+        "- Excellence – Delivering best-in-class solutions with precision and professionalism.",
+        "- Safety – Prioritizing HSE standards to protect people, assets, and the environment.",
+        "- Innovation – Leveraging technology and expertise to optimize industry performance.",
+        "- Sustainability – Committed to responsible energy solutions for a greener future.",
+        "These values define who we are, how we operate, and our commitment to stakeholders.",
+        "Join us as we continue to drive growth, efficiency, and sustainability in the energy sector.",
+      ],
+      cta: "Contact Us",
+      image: step1Image,
+    },
+  ];
