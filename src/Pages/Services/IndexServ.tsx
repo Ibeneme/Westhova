@@ -9,7 +9,7 @@ const Services: React.FC = () => {
         {/* Intro Section with Image */}
         <section className="services-main">
           <section className="intro">
-            <h1>Westhova</h1>
+            <h2 style={{ }}>Westhova Services</h2>
             <p>
               Westhova offers a diverse portfolio of industrial services
               tailored to meet the unique needs of Oil & Gas, Power, Healthcare,

@@ -4,7 +4,8 @@
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-    width: 100%
+    width: 100%;
+    padding-bottom: 120px
 }
 
 .services-main-container {
@@ -47,7 +48,7 @@
     border-radius: 5px;
 }
 
-.intro h1 {
+.intro h2 {
     font-size: 36px;
     color: #333;
 }
