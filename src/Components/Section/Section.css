@@ -1,27 +1,40 @@
 .steps-container {
     background-color: #fff;
     /* Background color */
-    padding: 30px 20px;
+
+
 }
 
 .step {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     margin-bottom: 40px;
     color: white;
-    padding: 120px 16px
+    padding: 40px 16px;
+    justify-content: space-between;
+
 }
 
 .step-info {
     flex: 1;
+    padding: 16px;
 
 }
 
 .step-title {
-    font-size: 48px;
+    font-size: 32px;
     margin-bottom: 24px;
     color: #010054;
     margin: 0px
+}
+
+.step-title-index-1 {
+    font-size: 36px;
+    margin-bottom: 24px;
+    color: #0F6DF9;
+    margin: 0px;
+    border-bottom: #0F6DF9 solid 6px;
+    width: fit-content;
 }
 
 .step-image-image {
@@ -29,9 +42,9 @@
 }
 
 .ctaButtonNew {
-    background-color: #010054;
+    background-color: #0F6DF9;
     color: white;
-    padding: 16px 16px;
+    padding: 16px 32px;
     font-size: 1rem;
     font-weight: bold;
     cursor: pointer;
@@ -60,6 +73,8 @@
 .step-image {
     flex: 1;
     padding: 10px;
+    justify-content: flex-end;
+    display: flex;
 }
 
 li {
@@ -71,7 +86,8 @@ li {
     height: auto;
     object-fit: cover;
     border-radius: 12px;
-    height: 600px
+    max-width: 600px;
+
 }
 
 /* Reverse the layout for even steps */
@@ -85,7 +101,7 @@ li {
     .steps-container {
         background-color: #fff;
         /* Background color */
-        padding: 30px 12px;
+        padding: 0px 0px;
     }
 
 

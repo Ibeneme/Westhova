@@ -1,7 +1,8 @@
 import { IoArrowForwardCircle } from "react-icons/io5"; // Importing the icon
 import "./Hero.css"; // Importing the CSS file
-import heroImage from "../../assets/sections/hero/hero.jpg"; // Importing the background image
+import heroImage from "../../assets/sections/oilrig.jpg"; // Importing the background image
 import { useState, useEffect } from "react"; // Importing useState and useEffect hooks
+import IngentiaEnergies from "../../Components/IngentiaEnergies/IngentiaEnergies";
 
 const Hero = () => {
   const [scrollY, setScrollY] = useState(0);
@@ -21,7 +22,6 @@ const Hero = () => {
 
   return (
     <section className="hero-section">
-      {/* Background Image with Parallax Effect */}
       <div
         className="hero-bg"
         style={{
@@ -34,20 +34,21 @@ const Hero = () => {
 
         {/* Hero Content */}
         <div className="hero-content">
-          <h1 className="hero-heading">
-            West Hova Integrated Solutions: Powering the Future of Oil & Gas
-          </h1>
+          <h1 className="hero-heading">Powering the Future of Oil & Gas</h1>
           <p className="hero-text">
-            At West Hova Integrated Solutions, we specialize in cutting-edge
-            oilfield services, ensuring safe, efficient, and sustainable energy
-            solutions. From drilling support to HSE compliance, we deliver
-            excellence at every stage of the oil & gas lifecycle.
+            West Hova Integrated Solutions delivers advanced oilfield services
+            with a focus on safety, efficiency, and sustainability. We
+            specialize in drilling support and HSE compliance.
           </p>
           {/* CTA Button */}
           <button className="cta-button">
             Get in Touch
             <IoArrowForwardCircle size={24} className="cta-icon" />
           </button>
+        </div>
+
+        <div style={{ marginTop: 120, zIndex: 1 }}>
+          <IngentiaEnergies />
         </div>
       </div>
     </section>

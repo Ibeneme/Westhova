@@ -1,18 +1,17 @@
-import { Route, Routes, useLocation } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import ScrollToTop from "./ScrollToTop";
 import Index from "./Pages/Index/Index";
 import Navbar from "./Components/Navbar/Navbar";
 import Footer from "./Components/Footer/Footer";
 import FAQPage from "./Pages/Hero/FAQPage";
 import Section from "./Components/Section/Section";
-import { StepsData } from "./Pages/Index/Steps";
 import BlogHero from "./Pages/About/BlogHero/BlogHero";
-import Services from "./Pages/Services/IndexServ";
 import HsesPolicy from "./Pages/About/HsesPolicy/HsesPolicy";
 import CommunityRelationsPolicy from "./Pages/About/CommunityRelationsPolicy/CommunityRelationsPolicy";
+import { StepsAbout } from "./Pages/Index/StepAbout";
+import ServicesDataNew from "./Pages/Services/ServicesDataNew";
 
 function App() {
-  const location = useLocation();
   return (
     <>
       <ScrollToTop />
@@ -21,9 +20,11 @@ function App() {
         <Route
           path="/"
           element={
-            <>
+            <div style={{ marginTop: -16 }}>
               <Index />
-            </>
+              <div style={{ marginTop: 80 }}></div>
+              <Footer hideContactUs showContactUs />
+            </div>
           }
         />
         <Route
@@ -31,7 +32,8 @@ function App() {
           element={
             <div style={{ marginTop: 60 }}>
               <BlogHero title="About Us" />
-              <Section stepsData={StepsData} />
+              <Section stepsData={StepsAbout} />
+              <Footer hideContactUs showContactUs />
             </div>
           }
         />
@@ -41,7 +43,8 @@ function App() {
           element={
             <div style={{ marginTop: 60 }}>
               <BlogHero title="Our Services" />
-              <Services />
+              <Section stepsData={ServicesDataNew} />
+              <Footer hideContactUs showContactUs />
             </div>
           }
         />
@@ -49,16 +52,21 @@ function App() {
         <Route
           path="/relations-policy"
           element={
-            <div style={{ marginTop: 60 }}>
+            <div style={{ marginTop: 0 }}>
+              <BlogHero title="COMMUNITY RELATION POLICY" />
               <CommunityRelationsPolicy />
+              <Footer />
             </div>
           }
         />
         <Route
           path="/hses-policy"
           element={
-            <div style={{ marginTop: 60 }}>
+            <div style={{ marginTop: 0 }}>
+              <BlogHero title="HEALTH, SAFETY, ENVIRONMENT AND SECURITY (HSES) POLICY" />
+
               <HsesPolicy />
+              <Footer />
             </div>
           }
         />
@@ -68,20 +76,19 @@ function App() {
             <div style={{ marginTop: 60 }}>
               <BlogHero title="FAQS" />
               <FAQPage />
+              <Footer />
             </div>
           }
         />
         <Route
           path="/contact-us"
-          element={<div style={{ marginTop: 100 }}></div>}
+          element={
+            <div style={{ marginTop: 100 }}>
+              <Footer />
+            </div>
+          }
         />
       </Routes>
-
-      {location.pathname !== "/contact-us" ? (
-        <Footer showContactUs />
-      ) : (
-        <Footer />
-      )}
     </>
   );
 }

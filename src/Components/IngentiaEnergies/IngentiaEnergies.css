@@ -1,0 +1,59 @@
+/* IngentiaEnergies.css */
+.container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card {
+
+    padding: 16px;
+    border-radius: 10px;
+    text-align: left;
+    max-width: 400px;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    align-items: flex-end;
+    height: 100px
+}
+
+.icon {
+    font-size: 64px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.title {
+    margin: 10px 0;
+    font-size: 32px;
+    font-weight: 900;
+}
+
+.description {
+    font-size: 16px;
+    color: #ffffff96;
+}
+
+@media (max-width: 768px) {
+
+    .icon {
+        font-size: 56px;
+        color: #fff;
+        margin-bottom: 10px;
+    }
+
+    .title {
+        margin: 10px 0;
+        font-size: 24px;
+        font-weight: 900;
+    }
+
+    .description {
+        font-size: 16px;
+        color: #ffffff96;
+    }
+
+}
