@@ -1,7 +1,7 @@
 // Single image for all services
 //import worker from "../../assets/sections/worker.jpg"; // Single image for all services/ Single image for all services
 import oilrig from "../../assets/sections/new.png"; // Single image for all services  // Single image for all services
-import oilwell from "../../assets/sections/flip.png"; // Single image for all services
+import oilwell from "../../assets/sections/Flip.png"; // Single image for all services
 //import cert from "../../assets/sections/cert.jpeg"; // Single image for all services
 
 export const StepsData = [
