@@ -10,7 +10,7 @@
 }
 
 .clipped-image {
-    clip-path: inset(0.8px 0 0 0);
+    clip-path: inset(1px 0 0 0);
 
 }
 
