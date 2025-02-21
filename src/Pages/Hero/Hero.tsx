@@ -3,6 +3,7 @@ import "./Hero.css"; // Importing the CSS file
 import heroImage from "../../assets/sections/oilrig.jpg"; // Importing the background image
 import { useState, useEffect } from "react"; // Importing useState and useEffect hooks
 import IngentiaEnergies from "../../Components/IngentiaEnergies/IngentiaEnergies";
+import { useNavigate } from "react-router-dom";
 
 const Hero = () => {
   const [scrollY, setScrollY] = useState(0);
@@ -19,6 +20,10 @@ const Hero = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+  const navigate = useNavigate();
+  const handleReadMore = () => {
+    navigate("/contact-us"); // Navigate to '/contact-us' if property exists
+  };
 
   return (
     <section className="hero-section">
@@ -41,7 +46,7 @@ const Hero = () => {
             specialize in drilling support and HSE compliance.
           </p>
           {/* CTA Button */}
-          <button className="cta-button">
+          <button className="cta-button" onClick={handleReadMore}>
             Get in Touch
             <IoArrowForwardCircle size={24} className="cta-icon" />
           </button>
