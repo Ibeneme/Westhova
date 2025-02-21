@@ -1,6 +1,6 @@
 import waste from "../../assets/sections/waste.png"; // Single image for all services// Single image for all services
 import oilrig from "../../assets/sections/new.png"; // Single image for all services
-import oilwell from "../../assets/sections/flip.png"; // Single image for all services
+import oilwell from "../../assets/sections/Flip.png";  // Single image for all services
 import worker from "../../assets/sections/core.png"; // Single image for all services
 import hse from "../../assets/sections/hse.png"; // Single image for all services
 import gas from "../../assets/sections/gas.png"; // Single image for all services
