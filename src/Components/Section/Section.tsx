@@ -39,7 +39,7 @@ const Section: React.FC<SectionProps> = ({ stepsData }) => {
           className={`step ${index % 2 === 1 ? "reverse" : ""}`}
           style={{
             backgroundColor: step.bgColor,
-            justifyContent: "space-between",
+            // justifyContent: "space-between",
             width: "100%",
           }}
         >
@@ -75,7 +75,7 @@ const Section: React.FC<SectionProps> = ({ stepsData }) => {
             </button>
           </div>
 
-          <div className="step-image">
+          <div className="step-image" >
             <img
               src={step.image}
               alt={`Step ${step.id}`}
