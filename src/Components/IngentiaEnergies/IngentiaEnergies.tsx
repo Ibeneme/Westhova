@@ -1,13 +1,13 @@
 import React from "react";
 import "./IngentiaEnergies.css";
-import { FaOilWell } from "react-icons/fa6";
 import { GiCellarBarrels } from "react-icons/gi";
 import { MdOutlineHealthAndSafety } from "react-icons/md";
+import { FaDroplet } from "react-icons/fa6";
 
 const cardData = [
   {
     id: 1,
-    icon: FaOilWell,
+    icon: FaDroplet,
     title: "2016",
     description:
       "West Hova commenced operations in 2016. A milestone in our journey.",
@@ -15,9 +15,9 @@ const cardData = [
   {
     id: 2,
     icon: GiCellarBarrels,
-    title: "100+",
+    title: "2000kb+",
     description:
-      "We offer expert drilling support. With over 400 successful projects.",
+      "We have safely evacuated and carried out over 2m bbls crude oil shipments mostly via ACE.",
   },
   {
     id: 3,

@@ -1,12 +1,12 @@
-/* BlogHero.css */
 .blog-hero {
   position: relative;
-  background: url('../../../assets/sections/hero/image.jpg') no-repeat center center fixed;
+  background: url('../../../assets/sections/westhova_headshot.png') no-repeat center center fixed;
   background-size: cover;
   background-attachment: fixed;
-  /* This enables the parallax effect */
+  /* Enables the parallax effect */
   background-position: center center;
-  height: 70vh;
+  /* Moves the image up by 65px */
+  height: 90vh;
   /* Adjust height as needed */
   display: flex;
   align-items: center;

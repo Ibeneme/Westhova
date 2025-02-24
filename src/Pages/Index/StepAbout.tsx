@@ -9,16 +9,13 @@ export const StepsAbout = [
     title: "Who We Are?",
     description: [
       "West Hova Integrated Solutions is a leading indigenous oilfield services and energy solutions provider in Nigeria.",
-      "Since 2016, we have specialized in Independent Hydrocarbon Inspection, Drilling Support, Pipeline Integrity Management, HSE Compliance, and Oilfield Logistics.",
+      "Since 2016, we have specialized in Independent Hydrocarbon Inspection, Alternative Crude Oil Evacuation, Pipeline Integrity Management, HSE Compliance, and Oilfield Logistics.",
       "Our expertise spans the upstream and downstream sectors, ensuring operational efficiency and compliance for our clients.",
-      "We are committed to delivering innovative, cost-effective, and sustainable energy solutions that drive industry growth.",
-      "Through strategic partnerships, cutting-edge technology, and a skilled workforce, we continuously exceed industry standards.",
-      "Reach out to us today to explore how our tailored solutions can enhance your operations.",
     ],
     cta: "Contact Us",
     image: oilrig,
     bgColor: "#E9F9FF",
-    new: true,
+    new: true
   },
   {
     id: 2,

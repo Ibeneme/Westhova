@@ -31,12 +31,10 @@ const FAQPage: React.FC = () => {
     {
       question: "What services does West Hova offer?",
       answer: `West Hova offers an extensive range of services tailored for the oil & gas industry, including:\n
-    Drilling & Well Support: Mud engineering, wellbore cleaning, casing & tubing running\n
-    Pipeline & Asset Integrity: Corrosion monitoring, non-destructive testing (NDT), pipeline pigging\n
-    HSE & Regulatory Compliance: Risk assessments, audits, emergency response training\n
-    Independent Hydrocarbon Inspection: Cargo & tank inspections, quantity verification\n
-    Oilfield Logistics & Procurement: Equipment supply, marine logistics, rig moves\n
-    Technical Training & Manpower Development: HSE training, oil & gas certification programs`,
+      Risk assessments, audits, emergency response training\n
+      Independent Hydrocarbon Inspection: Cargo & tank inspections, quantity verification\n
+      Oilfield Logistics & Procurement: Equipment supply, marine logistics, rig moves\n
+      Technical Training & Manpower Development: HSE training, oil & gas certification programs`,
     },
     {
       question: "What are the core values of West Hova?",
@@ -97,10 +95,7 @@ const FAQPage: React.FC = () => {
             {activeIndex === index && (
               <p className="faq-answer">
                 {faq.answer.split("\n").map((line, i) => (
-                  <p key={i}>
-                    {line}
-       
-                  </p>
+                  <p key={i}>{line}</p>
                 ))}
               </p>
             )}

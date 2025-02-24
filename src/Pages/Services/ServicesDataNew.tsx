@@ -1,5 +1,4 @@
-import waste from "../../assets/sections/waste.png"; // Single image for all services// Single image for all services
-import oilrig from "../../assets/sections/new.png"; // Single image for all services
+import waste from "../../assets/sections/waste.png"; // Single image for all services// Single image for all services/ Single image for all services
 import oilwell from "../../assets/sections/Flip.png"; // Single image for all services
 import worker from "../../assets/sections/core.png"; // Single image for all services
 import hse from "../../assets/sections/hse.png"; // Single image for all services
@@ -18,25 +17,6 @@ interface Service {
 }
 
 const ServicesDataNew: Service[] = [
-  {
-    id: 9,
-    title: "Drilling & Well Support Services",
-    description: [
-      "We provide comprehensive drilling and well support services, ensuring optimal performance, reduced downtime, and enhanced operational efficiency.",
-      "Our services include Drilling Fluids & Mud Engineering, Wellbore Cleaning, and Casing & Tubing Running.",
-    ],
-
-    services: [
-      "Drilling Fluids & Mud Engineering",
-      "Wellbore Cleaning",
-      "Casing & Tubing Running",
-    ],
-    
-    cta: "Contact Us",
-    image: oilrig,
-    bgColor: "#E9F9FF",
-    new: true,
-  },
   {
     id: 2,
     title: "Equipment Maintenance & Procurement",
