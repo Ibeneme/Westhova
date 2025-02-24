@@ -31,7 +31,7 @@ function App() {
           path="/about-us"
           element={
             <div style={{ marginTop: 60 }}>
-              <BlogHero title="About Us" />
+              <BlogHero title="ABOUT US" />
               <Section stepsData={StepsAbout} />
               <Footer hideContactUs showContactUs />
             </div>
@@ -42,7 +42,7 @@ function App() {
           path="/services"
           element={
             <div style={{ marginTop: 60 }}>
-              <BlogHero title="Our Services" />
+              <BlogHero title="OUR SERVICES" />
               <Section stepsData={ServicesDataNew} />
               <Footer hideContactUs showContactUs />
             </div>
