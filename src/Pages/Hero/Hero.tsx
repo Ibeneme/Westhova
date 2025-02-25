@@ -43,7 +43,8 @@ const Hero = () => {
           <p className="hero-text">
             West Hova Integrated Solutions delivers advanced oilfield services
             with a focus on safety, efficiency, and sustainability. We
-            specialize in drilling support and HSE compliance.
+            specialize in independent hydrocarbon measurements and inspection
+            services.{" "}
           </p>
           {/* CTA Button */}
           <button className="cta-button" onClick={handleReadMore}>
