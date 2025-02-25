@@ -3,7 +3,6 @@ import "./IngentiaEnergies.css";
 import { GiCellarBarrels } from "react-icons/gi";
 import { MdOutlineHealthAndSafety } from "react-icons/md";
 import { FaDroplet } from "react-icons/fa6";
-import { GiBarrel } from "react-icons/gi";
 
 const cardData = [
   {
@@ -18,15 +17,9 @@ const cardData = [
     icon: GiCellarBarrels,
     title: "2000kb+",
     description:
-      "We have safely evacuated and carried out over 2m bbls crude oil shipments mostly via ACE.",
-  },
-  {
-    id: 4,
-    icon: GiBarrel,
-    title: "2,000,000+",
-    description:
       "We have safely evacuated and carried out over 2m barrels of crude oil shipments mostly via ACE",
   },
+
   {
     id: 3,
     icon: MdOutlineHealthAndSafety,
