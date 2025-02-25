@@ -4,6 +4,8 @@ import worker from "../../assets/sections/core.png"; // Single image for all ser
 import hse from "../../assets/sections/hse.png"; // Single image for all services
 import gas from "../../assets/sections/gas.png"; // Single image for all services
 import ass from "../../assets/sections/ass.png"; // Single image for all services
+import red from "../../assets/sections/red.png"; // Single image for all services
+
 
 interface Service {
   id: number;
@@ -17,6 +19,24 @@ interface Service {
 }
 
 const ServicesDataNew: Service[] = [
+  {
+    id: 3,
+    title: "Hydrocarbon Accounting (Quantity and Quality Measurement)",
+    description: [
+      "Over the years, our distinguished clientele has reaped the benefits of our exceptional independent cargo surveys.",
+      "We transcend mere presence to meticulously ensure that every litre of your cargo is thoroughly accounted for, with explicit explanation provided for any instances of loss or gain.",
+    ],
+    services: [
+      "Equipment Inspection",
+      "Calibration & Testing",
+      "Spare Parts Procurement",
+    ],
+    cta: "Contact Us", //cta: "Get Started",
+    image: red,
+    bgColor: "#E9F9FF",
+    new: true,
+  },
+
   {
     id: 2,
     title: "Equipment Maintenance & Procurement",

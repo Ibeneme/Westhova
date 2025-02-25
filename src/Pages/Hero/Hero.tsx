@@ -8,8 +8,8 @@ import { useNavigate } from "react-router-dom";
 const Hero = () => {
   const [scrollY, setScrollY] = useState(0);
 
-  // Update scroll position on scroll event (Parallax effect)
-  useEffect(() => {
+
+ useEffect(() => {
     const handleScroll = () => {
       setScrollY(window.scrollY);
     };
@@ -25,6 +25,7 @@ const Hero = () => {
     navigate("/contact-us"); // Navigate to '/contact-us' if property exists
   };
 
+  
   return (
     <section className="hero-section">
       <div
