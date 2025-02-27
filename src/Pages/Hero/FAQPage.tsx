@@ -51,7 +51,7 @@ const FAQPage: React.FC = () => {
     ISO 9001 (Quality Management System)\n
     ISO 14001 (Environmental Management System)\n
     ISO 45001 (Occupational Health & Safety)\n
-    NNPC, DPR, and NCDMB Regulatory Compliance`,
+    NMDPRA and NUPRC Regulatory Compliance`,
     },
     {
       question: "How can I contact West Hova?",
