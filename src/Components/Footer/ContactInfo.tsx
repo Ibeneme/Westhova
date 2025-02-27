@@ -7,29 +7,24 @@ import "./ContactInfo.css";
 const position: LatLngExpression = [4.8149, 7.0498];
 
 const ContactInfo: React.FC = () => {
+  const openGoogleMapsDirections = () => {
+    const destination = encodeURIComponent("181-A Odili Road, Trans Amadi, Port Harcourt, Rivers State");
+    window.open(`https://www.google.com/maps/dir/?api=1&destination=${destination}`, "_blank");
+  };
+
   return (
     <div className="contact-info">
-      {/* <h2>Contact West Hova Integrated Solutions</h2>
-      <p>
-        <strong>Address:</strong> 181-A Odili Road, Trans Amadi, Port Harcourt.
-      </p>
-      <p>
-        <strong>Phone:</strong> +234 (0) 902 766 1296, +234 (0) 815 155 4215
-      </p>
-      <p>
-        <strong>Email:</strong>{" "}
-        <a href="mailto:admin@westhova.com">admin@westhova.com</a>
-      </p> */}
-
       <div className="map-container">
-        <MapContainer
-          center={position as LatLngExpression}
-          zoom={15}
-          style={{ height: "100%", width: "100%" }}
-        >
+        <MapContainer center={position} zoom={15} style={{ height: "100%", width: "100%" }}>
           <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
           <Marker position={position}>
-            <Popup>West Hova Integrated Solutions</Popup>
+            <Popup>
+              West Hova Integrated Solutions
+              <br />
+              <button onClick={openGoogleMapsDirections} className="directions-button">
+                Get Directions
+              </button>
+            </Popup>
           </Marker>
         </MapContainer>
       </div>
