@@ -13,13 +13,6 @@
   --text-color: #1f2937;
 }
 
-.dark {
-  --background-color: #121212;
-  --text-color: #f3f4f6;
-  --primary-color: #0F6DF9;
-  --secondary-color: #f0a500;
-}
-
 * {
   margin: 0;
   padding: 0;

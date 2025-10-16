@@ -1,7 +1,7 @@
-import React, { createContext, useContext, useState, useEffect, useMemo, ReactNode } from 'react';
-import { MdLightMode, MdDarkMode } from 'react-icons/md';
+import React, { createContext, useContext, ReactNode } from 'react';
+import { MdLightMode } from 'react-icons/md';
 
-type Theme = 'light' | 'dark';
+type Theme = 'light';
 
 interface ThemeContextType {
   theme: Theme;
@@ -12,56 +12,35 @@ interface ThemeContextType {
 
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
-const getInitialTheme = (): Theme => {
-  if (typeof window !== 'undefined' && window.localStorage) {
-    const storedTheme = window.localStorage.getItem('theme') as Theme;
-    if (storedTheme) return storedTheme;
-    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      return 'dark';
-    }
-  }
-  return 'light';
-};
-
 interface ThemeProviderProps {
   children: ReactNode;
 }
 
 export const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
-  const [theme, setTheme] = useState<Theme>(getInitialTheme);
-  const isDark = theme === 'dark';
+  const theme: Theme = 'light';
+  const isDark = false;
 
-  const applyThemeToDOM = (newTheme: Theme) => {
+  // Apply light theme class to document root once
+  React.useEffect(() => {
     const root = document.documentElement;
-    root.classList.remove('light', 'dark');
-    root.classList.add(newTheme);
-    localStorage.setItem('theme', newTheme);
+    root.classList.remove('dark');
+    root.classList.add('light');
+    localStorage.setItem('theme', 'light');
+  }, []);
+
+  const contextValue = {
+    theme,
+    isDark,
+    toggleTheme: () => {}, // No-op since light mode is forced
+    ThemeIcon: MdLightMode, // Always light mode icon
   };
-
-  useEffect(() => {
-    applyThemeToDOM(theme);
-  }, [theme]);
-
-  const toggleTheme = () => {
-    setTheme(prevTheme => (prevTheme === 'light' ? 'dark' : 'light'));
-  };
-
-  const contextValue = useMemo(
-    () => ({
-      theme,
-      isDark,
-      toggleTheme,
-      ThemeIcon: isDark ? MdLightMode : MdDarkMode,
-    }),
-    [theme, isDark]
-  );
 
   return <ThemeContext.Provider value={contextValue}>{children}</ThemeContext.Provider>;
 };
 
 export const useTheme = (): ThemeContextType => {
   const context = useContext(ThemeContext);
-  if (context === undefined) {
+  if (!context) {
     throw new Error('useTheme must be used within a ThemeProvider');
   }
   return context;
