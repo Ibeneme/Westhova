@@ -16,11 +16,13 @@ import AboutAndServicesSection from "./Pages/About/AboutAndServicesSection/About
 import UniqueServicesSection from "./Components/UniqueServicesSection/UniqueServicesSection";
 import ServiceExperienceGrid from "./Components/ServiceExperienceGrid/ServiceExperienceGrid";
 import CSRandHSESection from "./Components/CSRandHSESection/CSRandHSESection";
+import FloatingContactButton from "./Components/FloatingContactButton/FloatingContactButton";
 
 function App() {
   return (
     <>
       <ScrollToTop />
+      <FloatingContactButton />
       <Navbar />
       <Routes>
         {/* Home */}

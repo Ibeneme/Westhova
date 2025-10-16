@@ -13,12 +13,12 @@ import {
 import { GiOilDrum } from "react-icons/gi"; // For industry context
 // Assuming serviceImg1 is correctly imported from your assets path
 // import serviceImg1 from "../../assets/images/mission.jpg";
+import f from "../../assets/services/j.jpg";
+import g from "../../assets/services/m.jpg";
 
 // Using a standard placeholder for demonstration since I can't access your local file
-const serviceImg1 =
-  "https://via.placeholder.com/600x400/87CEFA/0A2342?text=CSR+Image";
-const serviceImg2 =
-  "https://via.placeholder.com/600x400/696969/0A2342?text=HSE+Image";
+const serviceImg1 = f;
+const serviceImg2 = g;
 
 const CSRandHSESection: React.FC = () => {
   return (
