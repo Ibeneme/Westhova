@@ -1,43 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- Favicon -->
+    <!-- ✅ Basic Meta -->
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-
-    <!-- Title -->
-    <title>
-      West Hova Integrated Solutions - Excellence in Safety & Innovation
-    </title>
-
-    <!-- Meta Description (SEO) -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
       content="West Hova Integrated Solutions specializes in HSES policies, community relations, and innovative solutions for sustainable business operations."
     />
-
-    <!-- Keywords -->
     <meta
       name="keywords"
       content="West Hova, HSES Policy, Community Relations, Safety Solutions, Environmental Management, Business Sustainability"
     />
-
-    <!-- Author -->
     <meta name="author" content="West Hova Integrated Solutions" />
+    <meta name="theme-color" content="#FFDB1B" />
 
-    <!-- Open Graph (OG) Meta Tags for Social Media Sharing -->
+    <!-- ✅ Title & Favicon -->
+    <title>West Hova Integrated Solutions – Excellence in Safety & Innovation</title>
+    <link rel="icon" type="image/png" href="/assets/favicon.png" />
+    <link rel="apple-touch-icon" href="/assets/logo.png" />
+
+    <!-- ✅ Preconnect & Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rethink+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ✅ Tailwind (CDN fallback) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: '#FFDB1B',
+            },
+            fontFamily: {
+              sans: ['"Rethink Sans"', 'ui-sans-serif', 'system-ui'],
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- ✅ Open Graph (Social Sharing) -->
     <meta property="og:title" content="West Hova Integrated Solutions" />
     <meta
       property="og:description"
-      content="A leading independent hydrocarbon measurements and inspection services provider"
+      content="A leading independent hydrocarbon measurement and inspection services provider."
     />
     <meta property="og:image" content="/assets/logo.png" />
     <meta property="og:url" content="https://www.westhova.com" />
     <meta property="og:type" content="website" />
 
-    <!-- Twitter Card for better social media previews -->
+    <!-- ✅ Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="West Hova Integrated Solutions" />
     <meta
@@ -46,10 +65,10 @@
     />
     <meta name="twitter:image" content="/assets/logo.png" />
 
-    <!-- Canonical URL (Avoids duplicate content issues) -->
+    <!-- ✅ Canonical URL -->
     <link rel="canonical" href="https://www.westhova.com" />
 
-    <!-- JSON-LD Structured Data for SEO -->
+    <!-- ✅ SEO: JSON-LD Structured Data -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -57,20 +76,34 @@
         "name": "West Hova Integrated Solutions",
         "url": "https://www.westhova.com",
         "logo": "/assets/logo.png",
+        "sameAs": [
+          "https://linkedin.com/company/westhova",
+          "https://twitter.com/westhova",
+          "https://instagram.com/westhova"
+        ],
         "description": "A leading provider of Health, Safety, Environment, and Security (HSES) policies and solutions.",
-        "contactPoint": {
-          "@type": "ContactPoint",
-          "telephone": "+234-XXX-XXX-XXXX",
-          "contactType": "Customer Support"
-        }
+        "contactPoint": [
+          {
+            "@type": "ContactPoint",
+            "telephone": "+234-XXX-XXX-XXXX",
+            "contactType": "Customer Support"
+          }
+        ]
       }
     </script>
 
-    <!-- Import Main Stylesheet -->
+    <!-- ✅ Main Styles -->
     <link rel="stylesheet" href="/styles.css" />
   </head>
-  <body>
+
+  <body class="font-sans antialiased bg-white text-gray-900">
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+
     <div id="root"></div>
+
+    <!-- ✅ Main Entry (Vite React) -->
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

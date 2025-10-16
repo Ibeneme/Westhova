@@ -1,17 +1,25 @@
-import Section from "../../Components/Section/Section";
 import Hero from "../Hero/Hero";
-import { StepsData } from "./Steps";
 import FAQPage from "../Hero/FAQPage";
-import { StepsData2 } from "./Steps2";
+import OilMenu from "../Hero/OilMenu";
+import PartnersCarousel from "../../Components/PartnersCarousel/PartnersCarousel";
+import VisionMissionValues from "../../Components/VisionMissionValues/VisionMissionValues";
+import ServicesCarouselSection from "../../Components/ServicesCarouselSection/ServicesCarouselSection";
+import ServiceMarqueeSection from "../../Components/ServiceMarqueeSection/ServiceMarqueeSection";
+import SelectedProjectExperience from "../../Components/SelectedProjectExperience/SelectedProjectExperience";
 
 const Index = () => {
   return (
     <div>
       <Hero />
-      <Section stepsData={StepsData} />
+      <OilMenu />
+      <PartnersCarousel />
+      <VisionMissionValues />
+      <ServiceMarqueeSection />
+      <ServicesCarouselSection />
+      <SelectedProjectExperience />
+      <ServiceMarqueeSection bgColor="#000" textColor="#fff"/>
+      <br /> <br />
       <FAQPage />
-      <br /> <br /> <br />
-      <Section stepsData={StepsData2} />
     </div>
   );
 };

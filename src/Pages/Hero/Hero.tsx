@@ -1,15 +1,13 @@
 import { IoArrowForwardCircle } from "react-icons/io5"; // Importing the icon
 import "./Hero.css"; // Importing the CSS file
-import heroImage from "../../assets/sections/oilrig.jpg"; // Importing the background image
+import heroImage from "../../assets/sections/hero/heroa.jpg"; // Importing the background image
 import { useState, useEffect } from "react"; // Importing useState and useEffect hooks
-import IngentiaEnergies from "../../Components/IngentiaEnergies/IngentiaEnergies";
 import { useNavigate } from "react-router-dom";
 
 const Hero = () => {
   const [scrollY, setScrollY] = useState(0);
 
-
- useEffect(() => {
+  useEffect(() => {
     const handleScroll = () => {
       setScrollY(window.scrollY);
     };
@@ -25,14 +23,16 @@ const Hero = () => {
     navigate("/contact-us"); // Navigate to '/contact-us' if property exists
   };
 
-  
   return (
     <section className="hero-section">
       <div
         className="hero-bg"
         style={{
+          objectFit: "contain",
           backgroundImage: `url(${heroImage})`,
-          backgroundPosition: `center ${scrollY * 0.3}px`, // Parallax effect
+          backgroundPosition: `center calc(70% + ${scrollY * 0.3}px)`, // Center-bottom focus + parallax
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
         }}
       >
         {/* Dark Overlay for Better Readability */}
@@ -40,22 +40,20 @@ const Hero = () => {
 
         {/* Hero Content */}
         <div className="hero-content">
-          <h1 className="hero-heading">Powering the Future of Oil & Gas</h1>
+          <h1 className="hero-heading">Thinking <span style={{color: `#fff`}}>Globally,</span> Acting Locally</h1>
           <p className="hero-text">
-            West Hova Integrated Solutions delivers advanced oilfield services
-            with a focus on safety, efficiency, and sustainability. We
-            specialize in independent hydrocarbon measurements and inspection
-            services.{" "}
+            West Hova Integrated Solutions is a service company leading provider
+            of inspection, testing, and certification services to all the oil
+            and gas industry. With a team of highly experienced professionals
+            and state-of-the-art equipment, we offer a range of services to
+            ensure the safety, efficiency, and compliance of offshore
+            operations.
           </p>
           {/* CTA Button */}
           <button className="cta-button" onClick={handleReadMore}>
             Get in Touch
             <IoArrowForwardCircle size={24} className="cta-icon" />
           </button>
-        </div>
-
-        <div style={{ marginTop: 120, zIndex: 1 }}>
-          <IngentiaEnergies />
         </div>
       </div>
     </section>

@@ -8,15 +8,18 @@ import "./index.css";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { BrowserRouter } from "react-router-dom";
+import { ThemeProvider } from "./context/ThemeProvider.tsx";
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <BrowserRouter>
-      {/* <Provider store={store}> */}
-      {/* <AOSWrapper> */}
+    <ThemeProvider>
+      <BrowserRouter>
+        {/* <Provider store={store}> */}
+        {/* <AOSWrapper> */}
         <App />
-      {/* </AOSWrapper> */}
-      <ToastContainer />
-    </BrowserRouter>
+        {/* </AOSWrapper> */}
+        <ToastContainer />
+      </BrowserRouter>
+    </ThemeProvider>
     {/* </Provider> */}
   </React.StrictMode>
 );

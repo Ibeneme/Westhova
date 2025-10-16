@@ -1,14 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
-/* @import url('https://fonts.googleapis.com/css2?family=Podkova:wght@400..800&display=swap'); */
 
-/* Root Variables */
+@import url('https://fonts.googleapis.com/css2?family=Rethink+Sans:wght@400;500;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
-  --primary-font: 'Plus Jakarta Sans', sans-serif;
-  /* --secondary-font: 'Podkova', serif; */
-  --secondary-font: 'Plus Jakarta Sans', sans-serif;
-  --bg-color: #ffffff;
-  --text-color: #333;
-  --primary-color: #515FDF;
+  --primary-font: 'Rethink Sans', sans-serif;
+  --secondary-font: 'Rethink Sans', sans-serif;
+  --primary-color: #0F6DF9;
+  --secondary-color: #f0a500;
+  --background-color: #ffffff;
+  --text-color: #1f2937;
+}
+
+.dark {
+  --background-color: #121212;
+  --text-color: #f3f4f6;
+  --primary-color: #0F6DF9;
   --secondary-color: #f0a500;
 }
 
@@ -16,21 +24,17 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: var(--primary-font);
 }
 
 body {
-  background-color: var(--bg-color);
+  background-color: var(--background-color);
   color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
 }
 
-p,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+p, h2, h3, h4, h5, h6 {
+  font-family: var(--primary-font);
 }
 
 h1 {
