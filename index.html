@@ -1,7 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="light">
   <head>
-    <!-- ✅ Basic Meta -->
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -16,12 +15,10 @@
     <meta name="author" content="West Hova Integrated Solutions" />
     <meta name="theme-color" content="#FFDB1B" />
 
-    <!-- ✅ Title & Favicon -->
     <title>West Hova Integrated Solutions – Excellence in Safety & Innovation</title>
     <link rel="icon" type="image/png" href="/assets/favicon.png" />
     <link rel="apple-touch-icon" href="/assets/logo.png" />
 
-    <!-- ✅ Preconnect & Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -29,10 +26,10 @@
       rel="stylesheet"
     />
 
-    <!-- ✅ Tailwind (CDN fallback) -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
+        darkMode: false, // force light mode
         theme: {
           extend: {
             colors: {
@@ -43,10 +40,9 @@
             },
           },
         },
-      };
+      }
     </script>
 
-    <!-- ✅ Open Graph (Social Sharing) -->
     <meta property="og:title" content="West Hova Integrated Solutions" />
     <meta
       property="og:description"
@@ -56,7 +52,6 @@
     <meta property="og:url" content="https://www.westhova.com" />
     <meta property="og:type" content="website" />
 
-    <!-- ✅ Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="West Hova Integrated Solutions" />
     <meta
@@ -65,10 +60,8 @@
     />
     <meta name="twitter:image" content="/assets/logo.png" />
 
-    <!-- ✅ Canonical URL -->
     <link rel="canonical" href="https://www.westhova.com" />
 
-    <!-- ✅ SEO: JSON-LD Structured Data -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -92,7 +85,6 @@
       }
     </script>
 
-    <!-- ✅ Main Styles -->
     <link rel="stylesheet" href="/styles.css" />
   </head>
 
@@ -102,8 +94,6 @@
     </noscript>
 
     <div id="root"></div>
-
-    <!-- ✅ Main Entry (Vite React) -->
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

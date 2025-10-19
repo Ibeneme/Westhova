@@ -6,7 +6,6 @@ import partnerD from "../../assets/partners/partnerd.png";
 import partnerE from "../../assets/partners/partnere.png";
 import partnerF from "../../assets/partners/partnerf.png";
 import partnerK from "../../assets/partners/partnerk.png";
-import "./PartnersCarousel.css";
 
 const partners = [
   partnerA,
@@ -18,32 +17,29 @@ const partners = [
   partnerK,
 ];
 
-const PartnersCarousel: React.FC = () => {
+const PartnersGrid: React.FC = () => {
   return (
-    <section className="w-full overflow-hidden py-12 bg-white pb-12 md:pb-48">
-
+    <section className="w-full py-12 bg-white">
       <h2 className="text-2xl md:text-3xl font-bold text-center mb-8 text-gray-900">
         Our Partners
       </h2>
 
-      <div className="relative w-full overflow-hidden">
-        <div className="flex animate-scroll-x gap-16">
-          {[...partners, ...partners].map((logo, index) => (
-            <div
-              key={index}
-              className="flex-shrink-0 w-52 h-32 flex items-center justify-center"
-            >
-              <img
-                src={logo}
-                alt={`Partner ${index + 1}`}
-                className="object-contain w-full h-full transition-transform scale-140  duration-300 hover:scale-110"
-              />
-            </div>
-          ))}
-        </div>
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 px-6 md:px-12">
+        {partners.map((logo, index) => (
+          <div
+            key={index}
+            className="flex items-center justify-center p-4 bg-gray-50 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300"
+          >
+            <img
+              src={logo}
+              alt={`Partner ${index + 1}`}
+              className="object-contain w-full h-24 transition-transform duration-300 hover:scale-110"
+            />
+          </div>
+        ))}
       </div>
     </section>
   );
 };
 
-export default PartnersCarousel;
+export default PartnersGrid;

@@ -14,19 +14,20 @@ const oilItems: OilItem[] = [
   {
     id: 1,
     title: "2016",
-    description: "West Hova commenced operations in 2016. A milestone in our journey.",
+    description:
+      "West Hova commenced operations in 2016. A milestone in our journey.",
     icon: GiCellarBarrels,
   },
   {
     id: 2,
-    title: "2000kb+",
+    title: "3000kb+",
     description:
-      "We have safely evacuated and carried out over 2m barrels of crude oil shipments mostly via ACE.",
+      "We have safely evacuated and carried out over 3m barrels of crude oil shipments mostly via ACE.",
     icon: FaDroplet,
   },
   {
     id: 3,
-    title: "63",
+    title: "72",
     description:
       "63 safety training programs completed. Prioritizing safety in all operations.",
     icon: MdOutlineHealthAndSafety,
@@ -74,9 +75,7 @@ const OilMenu: React.FC = () => {
                 >
                   <Icon
                     className={`w-12 h-12 transition-colors duration-300 ${
-                      isCurrentHighlighted
-                        ? "text-white"
-                        : "text-white"
+                      isCurrentHighlighted ? "text-white" : "text-white"
                     }`}
                   />
                 </div>
