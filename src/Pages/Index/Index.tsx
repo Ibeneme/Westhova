@@ -5,21 +5,24 @@ import PartnersCarousel from "../../Components/PartnersCarousel/PartnersCarousel
 import VisionMissionValues from "../../Components/VisionMissionValues/VisionMissionValues";
 import ServicesCarouselSection from "../../Components/ServicesCarouselSection/ServicesCarouselSection";
 import ServiceMarqueeSection from "../../Components/ServiceMarqueeSection/ServiceMarqueeSection";
-import SelectedProjectExperience from "../../Components/SelectedProjectExperience/SelectedProjectExperience";
+//import SelectedProjectExperience from "../../Components/SelectedProjectExperience/SelectedProjectExperience";
 
 const Index = () => {
   return (
     <div>
       <Hero />
-      <OilMenu />
-      <PartnersCarousel />
-      <VisionMissionValues />
-      <ServiceMarqueeSection />
       <ServicesCarouselSection />
-      <SelectedProjectExperience />
+ 
+
+      <VisionMissionValues />
+
+
+      {/* <SelectedProjectExperience /> */}
       <ServiceMarqueeSection bgColor="#000" textColor="#fff"/>
       <br /> <br />
+      <OilMenu />
       <FAQPage />
+      <PartnersCarousel />
     </div>
   );
 };
