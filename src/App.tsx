@@ -17,6 +17,7 @@ import UniqueServicesSection from "./Components/UniqueServicesSection/UniqueServ
 // import ServiceExperienceGrid from "./Components/ServiceExperienceGrid/ServiceExperienceGrid";
 import CSRandHSESection from "./Components/CSRandHSESection/CSRandHSESection";
 import FloatingContactButton from "./Components/FloatingContactButton/FloatingContactButton";
+import VisionMissionValues from "./Components/VisionMissionValues/VisionMissionValues";
 
 function App() {
   return (
@@ -43,7 +44,7 @@ function App() {
             <>
               <BlogHero title="ABOUT US" />
               <AboutAndServicesSection />
-              <UniqueServicesSection />
+<VisionMissionValues />
               {/* <ServiceExperienceGrid /> */}
               <Footer />
             </>
@@ -69,6 +70,7 @@ function App() {
             <>
               <BlogHero title="OUR SERVICES" />
               <ServicesApproachSection />
+              <UniqueServicesSection />
               <Footer />
             </>
           }
