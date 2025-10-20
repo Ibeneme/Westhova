@@ -43,7 +43,7 @@ function App() {
           element={
             <>
               <BlogHero title="ABOUT US" />
-              <AboutAndServicesSection />
+    
               <VisionMissionValues />
               {/* <ServiceExperienceGrid /> */}
               <Footer />
@@ -69,6 +69,7 @@ function App() {
           element={
             <>
               <BlogHero title="OUR SERVICES" />
+              <AboutAndServicesSection />
               <ServicesApproachSection />
               <UniqueServicesSection />
               <Footer />
