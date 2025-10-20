@@ -67,7 +67,7 @@ const ServicesApproachSection: React.FC = () => {
             ></span>
           </h2>
 
-          <div className="relative flex flex-row overflow-x-auto gap-6 scrollbar-hide py-4">
+          <div className="relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 items-stretch">
   {[
     {
       title: "Alternative Hydrocarbon Transport Consultancy & Accounting",
@@ -97,7 +97,7 @@ const ServicesApproachSection: React.FC = () => {
   ].map((service, index) => (
     <div
       key={index}
-      className="min-w-[250px] bg-gray-50 p-6 text-center flex flex-col items-center justify-start rounded-md transition-all duration-200 hover:bg-gray-100 shadow-sm"
+      className="bg-gray-50 p-6 text-center flex flex-col items-center justify-start rounded-md transition-all duration-300 hover:bg-gray-100 hover:-translate-y-1 shadow-sm"
     >
       <div className={`${service.color} mb-4 p-3 rounded-full`}>
         {React.createElement(service.icon, {
