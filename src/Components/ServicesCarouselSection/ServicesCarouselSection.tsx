@@ -3,10 +3,10 @@ import { useNavigate } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-import serviceImg1 from "../../assets/services/b.jpg";
-import serviceImg2 from "../../assets/services/j.jpg";
-import serviceImg3 from "../../assets/services/m.jpg";
-import serviceImg4 from "../../assets/services/o.jpg";
+import serviceImg1 from "../../assets/services/hydro.png";
+import serviceImg2 from "../../assets/services/asset.png";
+import serviceImg3 from "../../assets/services/se.png";
+import serviceImg4 from "../../assets/services/sc.png";
 
 interface ServiceCard {
   id: number;
