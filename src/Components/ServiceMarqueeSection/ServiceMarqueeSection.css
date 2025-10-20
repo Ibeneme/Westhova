@@ -44,20 +44,22 @@
     font-weight: 700;
     /* Extra bold */
     margin: 0 16px;
-    font-size: 3rem;
+    font-size: 2rem;
     /* Base size, adjust with media queries */
 }
 
 @media (min-width: 768px) {
     .marquee-text {
-        font-size: 3rem;
+        font-size: 2rem;
         /* md:text-7xl */
     }
 }
 
 @media (min-width: 1024px) {
     .marquee-text {
-        font-size: 4rem;
+        padding: 0px;
+        margin: 0px;
+        font-size: 1.3rem;
         /* lg:text-8xl */
     }
 }

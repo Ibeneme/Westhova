@@ -2,8 +2,8 @@ import React from "react";
 import "./ServiceMarqueeSection.css";
 
 interface ServiceMarqueeSectionProps {
-  bgColor?: string;    // Background color
-  textColor?: string;  // Text color
+  bgColor?: string; // Background color
+  textColor?: string; // Text color
   marqueeText?: string; // Optional custom text
   repeatCount?: number; // Number of repeats
 }
@@ -16,10 +16,10 @@ const ServiceMarqueeSection: React.FC<ServiceMarqueeSectionProps> = ({
 }) => {
   return (
     <section
-      className="py-8 overflow-hidden"
+      className="py-4 md:py-8 overflow-hidden"
       style={{ backgroundColor: bgColor, color: textColor }}
     >
-      <div className="flex flex-col space-y-2">
+      <div className="flex flex-col">
         {/* First Line: Left Scroll */}
         <div className="marquee-wrapper" style={{ color: textColor }}>
           <div className="marquee-left">
