@@ -2,29 +2,32 @@ import React from "react";
 import "./ServiceMarqueeSection.css";
 
 interface ServiceMarqueeSectionProps {
-  bgColor?: string; // Background color
-  textColor?: string; // Text color
-  marqueeText?: string; // Optional custom text
-  repeatCount?: number; // Number of repeats
+  bgColor?: string;
+  textColor?: string;
+  marqueeText?: string;
+  repeatCount?: number;
 }
 
 const ServiceMarqueeSection: React.FC<ServiceMarqueeSectionProps> = ({
   bgColor = "#0F0F0F",
   textColor = "#fff",
-  marqueeText = "Think Oil and gas, Think West Hova Integrated Solutions.",
-  repeatCount = 5,
+  marqueeText = "Think Oil and Gas, Think West Hova Integrated Solutions.",
+  repeatCount = 1,
 }) => {
   return (
     <section
       className="py-4 md:py-8 overflow-hidden"
       style={{ backgroundColor: bgColor, color: textColor }}
     >
-      <div className="flex flex-col">
-        {/* First Line: Left Scroll */}
+      <div className="flex flex-col gap-[100px]">
         <div className="marquee-wrapper" style={{ color: textColor }}>
           <div className="marquee-left">
-            {Array.from({ length: repeatCount }).map((_, index) => (
-              <span key={index} className="marquee-text">
+            {Array.from({ length: 9 }).map((_, index) => (
+              <span
+                key={index}
+                className="marquee-text"
+                style={{ marginRight: 50 }}
+              >
                 {marqueeText}
               </span>
             ))}
@@ -38,9 +41,10 @@ const ServiceMarqueeSection: React.FC<ServiceMarqueeSectionProps> = ({
           </div>
         </div>
 
-        {/* Optional Second Line */}
-        {/* Uncomment below if needed */}
-        {/* <div className="marquee-wrapper" style={{ color: textColor }}>
+        {/* Second Line: Optional */}
+        {/* Uncomment this block when needed */}
+        {/*
+        <div className="marquee-wrapper" style={{ color: textColor }}>
           <div className="marquee-right">
             {Array.from({ length: repeatCount }).map((_, index) => (
               <span key={index} className="marquee-text">
@@ -55,7 +59,8 @@ const ServiceMarqueeSection: React.FC<ServiceMarqueeSectionProps> = ({
               </span>
             ))}
           </div>
-        </div> */}
+        </div>
+        */}
       </div>
     </section>
   );

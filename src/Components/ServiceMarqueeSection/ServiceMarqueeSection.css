@@ -1,65 +1,51 @@
-/* RecipeMarqueeSection.css */
-
-/* Keyframes for scrolling */
 @keyframes scroll-left {
     0% {
-        transform: translateX(0%);
+      transform: translateX(0%);
     }
-
     100% {
-        transform: translateX(-100%);
+      transform: translateX(-100%);
     }
-}
-
-@keyframes scroll-right {
+  }
+  
+  @keyframes scroll-right {
     0% {
-        transform: translateX(-100%);
+      transform: translateX(-100%);
     }
-
     100% {
-        transform: translateX(0%);
+      transform: translateX(0%);
     }
-}
-
-/* Marquee containers */
-.marquee-left {
+  }
+  
+  .marquee-left {
     animation: scroll-left 72s linear infinite;
-    /* Adjust duration for speed */
     display: inline-flex;
-}
-
-.marquee-right {
+  }
+  
+  .marquee-right {
     animation: scroll-right 72s linear infinite;
     display: inline-flex;
-}
-
-/* Wrapper to hide overflow and maintain horizontal scroll */
-.marquee-wrapper {
+  }
+  
+  .marquee-wrapper {
     overflow: hidden;
     white-space: nowrap;
-}
-
-/* Text style (can be overridden in component if needed) */
-.marquee-text {
+  }
+  
+  .marquee-text {
     font-weight: 700;
-    /* Extra bold */
     margin: 0 16px;
     font-size: 2rem;
-    /* Base size, adjust with media queries */
-}
-
-@media (min-width: 768px) {
+  }
+  
+  @media (min-width: 768px) {
     .marquee-text {
-        font-size: 2rem;
-        /* md:text-7xl */
+      font-size: 2rem;
     }
-}
-
-@media (min-width: 1024px) {
+  }
+  
+  @media (min-width: 1024px) {
     .marquee-text {
-        padding: 0px;
-        margin: 0px;
-        font-size: 1.3rem;
-        /* lg:text-8xl */
+      margin: 0;
+      font-size: 1.3rem;
     }
-}
+  }
