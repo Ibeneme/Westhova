@@ -9,6 +9,7 @@ const BlogHero: React.FC<BlogHeroProps> = ({ title }) => {
   const [scrollY, setScrollY] = useState(0);
 
   useEffect(() => {
+    console.log(scrollY)
     const handleScroll = () => setScrollY(window.scrollY);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -16,10 +17,10 @@ const BlogHero: React.FC<BlogHeroProps> = ({ title }) => {
 
   return (
     <section
-      className="relative w-full h-64 md:h-96 flex items-center justify-center bg-contain bg-center"
+      className="relative w-full flex items-center justify-center bg-center bg-no-repeat bg-cover h-[300px] md:h-[600px]"
       style={{
         backgroundImage: `url(${heroImage})`,
-        backgroundPosition: `center ${scrollY * 0.5}px`,
+        // backgroundPosition: `center ${scrollY * 0.5}px`,
       }}
     >
       {/* Overlay */}
