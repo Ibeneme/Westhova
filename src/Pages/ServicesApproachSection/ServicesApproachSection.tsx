@@ -104,7 +104,7 @@ const ServicesApproachSection: React.FC = () => {
           className: "w-10 h-10 mx-auto",
         })}
       </div>
-      <h3 className={`text-lg font-bold ${primaryDark} pt-4`}>
+      <h3 className={`text-[18px] font-bold ${primaryDark} pt-4`}>
         {service.title}
       </h3>
     </div>
