@@ -23,7 +23,7 @@ import a from "../../assets/services/a.jpg";
 // import g from "../../assets/services/g.jpg";
 // import h from "../../assets/services/h.jpg";
 // import i from "../../assets/services/i.jpg";
-import j from "../../assets/services/j.jpg";
+import j from "../../assets/services/station.jpg";
 // import k from "../../assets/services/k.jpg";
 import l from "../../assets/services/q.jpg";
 // import m from "../../assets/services/m.jpg";
