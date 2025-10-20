@@ -1,7 +1,7 @@
 import React from "react";
-import gasImage from "../../assets/services/b.jpg";
-import f from "../../assets/services/j.jpg";
-import g from "../../assets/services/m.jpg";
+import gasImage from "../../assets/services/chem.png";
+import f from "../../assets/services/compa.png";
+import g from "../../assets/services/engg.png";
 // import h from "../../assets/services/h.jpg";
 // import i from "../../assets/services/i.jpg";
 
