@@ -57,7 +57,6 @@ const ServicesApproachSection: React.FC = () => {
     <section className="bg-white py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 font-serif text-gray-700">
       <div className="max-w-8xl mx-auto space-y-24">
         {/* --- 1. Introduction: Integrated Service Delivery --- */}
-
         <div className="text-center pt-8">
           <h2
             className={`text-5xl font-extrabold ${primaryDark} mb-16 relative inline-block pb-3`}
@@ -91,6 +90,11 @@ const ServicesApproachSection: React.FC = () => {
                 icon: FaChartLine,
                 color: accentColor,
               },
+              {
+                title: "Trainings and Capacity Building Consultancy",
+                icon: FaCheckDouble,
+                color: "text-yellow-500",
+              },
             ].map((service, index) => (
               <div
                 key={index}
@@ -110,7 +114,7 @@ const ServicesApproachSection: React.FC = () => {
             ))}
           </div>
         </div>
-        <br />    <br />
+        <br /> <br />
         <h2 className="text-[64px] sm:text-[64px] mt-[120px] font-extrabold text-blue-900 text-left mb-0">
           What we do?
         </h2>
@@ -144,9 +148,7 @@ const ServicesApproachSection: React.FC = () => {
             />
           </div>
         </div>
-
         {/* --- 2. Our Services Overview - Linear/Minimalist Pattern (No images) --- */}
-
         {/* --- 3. Services: Alternative Hydrocarbon Transport Consultancy & Accounting --- */}
         <div className="bg-gray-900 text-white p-5 md:p-12 rounded-none">
           <h2
@@ -217,7 +219,6 @@ const ServicesApproachSection: React.FC = () => {
             </div>
           </div>
         </div>
-
         {/* --- 4. Services: Asset Integrity & Maintenance Management --- */}
         <div className="bg-gray-50 p-5 md:p-12 rounded-none border border-gray-200">
           <h2
@@ -269,7 +270,6 @@ const ServicesApproachSection: React.FC = () => {
             </div>
           </div>
         </div>
-
         {/* --- 5. Services: Specialty Engineering Units & Packages --- */}
         <div className="bg-gray-100 p-5 md:p-12 rounded-none border border-gray-300">
           <FaFlask className="text-indigo-700 mr-4 text-3xl" />
@@ -340,7 +340,6 @@ const ServicesApproachSection: React.FC = () => {
             </div>
           </div>
         </div>
-
         <div className="bg-gray-900 text-white p-5 md:p-12 rounded-none border-t-8 border-gray-700">
           <FaChartLine className={`mr-4 text-3xl`} />
           <br />{" "}
