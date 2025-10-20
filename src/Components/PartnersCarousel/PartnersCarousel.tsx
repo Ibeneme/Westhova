@@ -12,8 +12,8 @@ import partnerg from "../../assets/partners/partnerg.png";
 import partnerM from "../../assets/partners/partnerm.png";
 import partnerN from "../../assets/partners/partnern.png";
 import partnerO from "../../assets/partners/partnero.png";
-import partnerq from "../../assets/partners/partnerq.jpeg";
-import partnerr from "../../assets/partners/partnerr.jpeg";
+import partnerq from "../../assets/partners/partnerq.png";
+import partnerr from "../../assets/partners/partnerr.png";
 
 const partners = [
   partnerA,
