@@ -13,8 +13,8 @@ import {
 import { GiOilDrum } from "react-icons/gi"; // For industry context
 // Assuming serviceImg1 is correctly imported from your assets path
 // import serviceImg1 from "../../assets/images/mission.jpg";
-import f from "../../assets/services/j.jpg";
-import g from "../../assets/services/m.jpg";
+import f from "../../assets/services/ss.png";
+import g from "../../assets/services/sss.png";
 
 // Using a standard placeholder for demonstration since I can't access your local file
 const serviceImg1 = f;

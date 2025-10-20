@@ -25,7 +25,7 @@ import a from "../../assets/services/a.jpg";
 // import i from "../../assets/services/i.jpg";
 import j from "../../assets/services/station.jpg";
 // import k from "../../assets/services/k.jpg";
-import l from "../../assets/services/q.jpg";
+import l from "../../assets/services/asset.png";
 // import m from "../../assets/services/m.jpg";
 import n from "../../assets/services/n.jpg";
 
