@@ -142,7 +142,7 @@ const UniqueServicesSection: React.FC = () => {
               padding: 16,
               borderRadius: 16,
               marginTop: 120,
-              gap: 32,
+              gap: -64,
               display: "flex",
               flexDirection: "column",
             }}
@@ -151,7 +151,7 @@ const UniqueServicesSection: React.FC = () => {
             <h2 className="text-[34px] sm:text-[34px] mt-[24px] font-extrabold text-blue-900 text-left mb-0">
               Our Other Services
             </h2>
-            <div className="mb-12 lg:mb-16">
+            <div className="">
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div className="bg-white p-6 rounded-lg transition-shadow duration-300 transform hover:-translate-y-1">
                   <h3 className="text-2xl font-bold text-blue-700 mb-4 border-b-2 border-blue-300 pb-2">
