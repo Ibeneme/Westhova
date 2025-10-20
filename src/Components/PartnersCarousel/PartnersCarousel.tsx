@@ -6,6 +6,9 @@ import partnerD from "../../assets/partners/partnerd.png";
 import partnerE from "../../assets/partners/partnere.png";
 import partnerF from "../../assets/partners/partnerf.png";
 import partnerK from "../../assets/partners/partnerk.png";
+import partneri from "../../assets/partners/partneri.png";
+import partnerj from "../../assets/partners/partnerj.png";
+import partnerg from "../../assets/partners/partnerg.png";
 import partnerM from "../../assets/partners/partnerm.png";
 import partnerN from "../../assets/partners/partnern.png";
 import partnerO from "../../assets/partners/partnero.png";
@@ -21,6 +24,9 @@ const partners = [
   partnerM,
   partnerN,
   partnerO,
+  partneri,
+  partnerj,
+  partnerg
 ];
 
 const PartnersGrid: React.FC = () => {

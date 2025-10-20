@@ -29,7 +29,7 @@ const oilItems: OilItem[] = [
     id: 3,
     title: "72",
     description:
-      "63 safety training programs completed. Prioritizing safety in all operations.",
+      "72 safety training programs completed. Prioritizing safety in all operations.",
     icon: MdOutlineHealthAndSafety,
   },
 ];
