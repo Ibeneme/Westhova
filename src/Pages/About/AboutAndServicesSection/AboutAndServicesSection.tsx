@@ -43,7 +43,7 @@ const AboutAndServicesSection: React.FC = () => {
         {/* Testing, Inspection, Certification Section - Grid Layout */}
         <div className="mb-12 lg:mb-16">
           <h2 className="text-3xl sm:text-4xl font-extrabold text-blue-900 text-left mb-4">
-            Our Core Expertise
+            What we do?
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Testing Card */}

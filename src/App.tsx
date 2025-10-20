@@ -44,7 +44,7 @@ function App() {
             <>
               <BlogHero title="ABOUT US" />
               <AboutAndServicesSection />
-<VisionMissionValues />
+              <VisionMissionValues />
               {/* <ServiceExperienceGrid /> */}
               <Footer />
             </>
