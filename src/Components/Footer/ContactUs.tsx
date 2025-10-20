@@ -1,8 +1,15 @@
 import React from "react";
 
-const ContactUs: React.FC = () => {
+interface ContactUsProps {
+  margin?: boolean; // optional prop to control top padding
+}
+
+const ContactUs: React.FC<ContactUsProps> = ({ margin }) => {
   return (
-    <section className="bg-gray-900 text-white py-16 px-4 md:px-16 font-sans">
+    <section
+      style={{ paddingTop: margin ? 200 : 64 }}
+      className="bg-gray-900 text-white py-16 px-4 md:px-16 font-sans"
+    >
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row gap-12">
         {/* Left: Contact Info */}
         <div className="flex-1 flex flex-col gap-6">

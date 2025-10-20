@@ -6,10 +6,10 @@ import {
   FaChartLine,
   FaCheckDouble,
   FaHardHat,
-//   FaHandshake,
-//   FaGlobe,
-//   FaMoneyBillWave,
-//   FaBalanceScale,
+  //   FaHandshake,
+  //   FaGlobe,
+  //   FaMoneyBillWave,
+  //   FaBalanceScale,
   FaProjectDiagram,
 } from "react-icons/fa";
 
@@ -57,38 +57,7 @@ const ServicesApproachSection: React.FC = () => {
     <section className="bg-white py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 font-serif text-gray-700">
       <div className="max-w-8xl mx-auto space-y-24">
         {/* --- 1. Introduction: Integrated Service Delivery --- */}
-        <div className=" rounded-none flex flex-col lg:flex-row gap-10 items-center  ">
-          <div className="lg:w-1/2">
-            <h1
-              className={`text-5xl font-extrabold ${primaryDark} mb-6 leading-tight`}
-            >
-              <span className={accentColor}>Integrated</span> Service Delivery
-            </h1>
-            <p className="text-xl leading-relaxed mb-6 font-semibold">
-              <strong className={primaryDark}>WEST HOVA</strong> is an
-              indigenous integrated service delivery company with strategic
-              focus in the Oil and Gas industry, Manufacturing & Power
-              Generation.
-            </p>
-            <p className="text-lg leading-relaxed text-gray-600">
-              Our aim is to deliver **quality, cost-effective, innovative and
-              sustainable solutions** to our current increasing global
-              clientele. Our commitment to professional development and also
-              coverage our strategic partnerships and OEM relationships when the
-              need arises.
-            </p>
-          </div>
-          {/* FIX: Use aspect ratio for consistent image container height */}
-          <div className="lg:w-1/2 flex justify-center ">
-            <img
-              src={introImg}
-              alt="Integrated Delivery Pipes"
-              className={`${imageClasses} rounded-none h-[500px]`}
-            />
-          </div>
-        </div>
 
-        {/* --- 2. Our Services Overview - Linear/Minimalist Pattern (No images) --- */}
         <div className="text-center pt-8">
           <h2
             className={`text-5xl font-extrabold ${primaryDark} mb-16 relative inline-block pb-3`}
@@ -141,6 +110,42 @@ const ServicesApproachSection: React.FC = () => {
             ))}
           </div>
         </div>
+        <br />    <br />
+        <h2 className="text-[64px] sm:text-[64px] mt-[120px] font-extrabold text-blue-900 text-left mb-0">
+          What we do?
+        </h2>
+        <div className=" rounded-none flex flex-col lg:flex-row gap-10 items-center  ">
+          <div className="lg:w-1/2">
+            <h1
+              className={`text-5xl font-extrabold ${primaryDark} mb-6 leading-tight`}
+            >
+              <span className={accentColor}>Integrated</span> Service Delivery
+            </h1>
+            <p className="text-xl leading-relaxed mb-6 font-semibold">
+              <strong className={primaryDark}>WEST HOVA</strong> is an
+              indigenous integrated service delivery company with strategic
+              focus in the Oil and Gas industry, Manufacturing & Power
+              Generation.
+            </p>
+            <p className="text-lg leading-relaxed text-gray-600">
+              Our aim is to deliver **quality, cost-effective, innovative and
+              sustainable solutions** to our current increasing global
+              clientele. Our commitment to professional development and also
+              coverage our strategic partnerships and OEM relationships when the
+              need arises.
+            </p>
+          </div>
+          {/* FIX: Use aspect ratio for consistent image container height */}
+          <div className="lg:w-1/2 flex justify-center ">
+            <img
+              src={introImg}
+              alt="Integrated Delivery Pipes"
+              className={`${imageClasses} rounded-none h-[500px]`}
+            />
+          </div>
+        </div>
+
+        {/* --- 2. Our Services Overview - Linear/Minimalist Pattern (No images) --- */}
 
         {/* --- 3. Services: Alternative Hydrocarbon Transport Consultancy & Accounting --- */}
         <div className="bg-gray-900 text-white p-5 md:p-12 rounded-none">
@@ -326,7 +331,7 @@ const ServicesApproachSection: React.FC = () => {
                 </li>
               </ul>
             </div>
-           <div className="grid grid-cols-1 gap-4 p-2 ">
+            <div className="grid grid-cols-1 gap-4 p-2 ">
               <img
                 src={seiupImg3}
                 alt="Engineering Unit"

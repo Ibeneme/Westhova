@@ -27,13 +27,14 @@ function App() {
       <Navbar />
       <Routes>
         {/* Home */}
+
         <Route
           path="/"
           element={
-            <>
+            <div style={{ marginTop: -120 }}>
               <Index />
               <Footer />
-            </>
+            </div>
           }
         />
 
@@ -41,13 +42,13 @@ function App() {
         <Route
           path="/about-us"
           element={
-            <>
+            <div style={{ marginTop: -120 }}>
               <BlogHero title="ABOUT US" />
-    
+
               <VisionMissionValues />
               {/* <ServiceExperienceGrid /> */}
               <Footer />
-            </>
+            </div>
           }
         />
 
@@ -55,11 +56,11 @@ function App() {
         <Route
           path="/csr"
           element={
-            <>
+            <div style={{ marginTop: -120 }}>
               <BlogHero title="CSR and HSE" />
               <CSRandHSESection />
               <Footer />
-            </>
+            </div>
           }
         />
 
@@ -67,13 +68,13 @@ function App() {
         <Route
           path="/services"
           element={
-            <>
+            <div style={{ marginTop: -120 }}>
               <BlogHero title="OUR SERVICES" />
               <AboutAndServicesSection />
               <ServicesApproachSection />
               <UniqueServicesSection />
               <Footer />
-            </>
+            </div>
           }
         />
 
@@ -81,11 +82,11 @@ function App() {
         <Route
           path="/relations-policy"
           element={
-            <>
+            <div style={{ marginTop: -120 }}>
               <BlogHero title="COMMUNITY RELATION POLICY" />
               <CommunityRelationsPolicy />
               <Footer />
-            </>
+            </div>
           }
         />
 
@@ -93,11 +94,11 @@ function App() {
         <Route
           path="/hses-policy"
           element={
-            <>
+            <div style={{ marginTop: -120 }}>
               <BlogHero title="HEALTH, SAFETY, ENVIRONMENT AND SECURITY (HSES) POLICY" />
               <HsesPolicy />
               <Footer />
-            </>
+            </div>
           }
         />
 
@@ -105,16 +106,22 @@ function App() {
         <Route
           path="/faqs"
           element={
-            <>
+            <div style={{ marginTop: -120 }}>
               <BlogHero title="FAQS" />
               <FAQPage />
               <Footer />
-            </>
+            </div>
           }
         />
 
-        {/* Contact Us */}
-        <Route path="/contact-us" element={<Footer />} />
+        <Route
+          path="/contact-us"
+          element={
+            <div style={{ marginTop: -120 }}>
+              <Footer margin/>
+            </div>
+          }
+        />
       </Routes>
     </>
   );

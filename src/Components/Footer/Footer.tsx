@@ -7,12 +7,13 @@ import { Link } from "react-router-dom";
 
 interface FooterProps {
   hideContactUs?: boolean;
+  margin?: boolean
 }
 
-const Footer: React.FC<FooterProps> = ({ hideContactUs }) => {
+const Footer: React.FC<FooterProps> = ({ hideContactUs , margin}) => {
   return (
-    <footer className="bg-white text-gray-900 w-full">
-      {!hideContactUs && <ContactUs />}
+    <footer  className="bg-white text-gray-900 w-full">
+      {!hideContactUs && <ContactUs margin={margin}/>}
 
       <div className="mx-auto flex flex-col md:flex-row justify-between px-4 md:px-16 py-12 gap-8">
         {/* Left Section */}

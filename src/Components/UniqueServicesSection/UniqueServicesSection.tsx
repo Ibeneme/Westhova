@@ -7,8 +7,8 @@ import g from "../../assets/services/engg.png";
 
 const UniqueServicesSection: React.FC = () => {
   return (
-    <section className="bg-white py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 font-sans mt-[32px">
-      <div className="max-w-7xl mx-auto space-y-4">
+    <section className="bg-white py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 font-sans mt-[-72px]">
+      <div className="max-w-8xl mx-auto space-y-4">
         {/* 3. Oil, Gas & Chemical Commodities and Solutions - Featured Block */}
         <div className="relative overflow-hidden rounded-xl  bg-blue-900 text-white p-4 md:p-8 lg:p-8">
           <h2 className="text-4xl font-extrabold mb-2 pb-2">
@@ -134,6 +134,88 @@ const UniqueServicesSection: React.FC = () => {
                 </p>
               </div>
             </div>
+          </div>
+
+          <div
+            style={{
+              backgroundColor: "#f4f4f4",
+              padding: 16,
+              borderRadius: 16,
+              marginTop: 120,
+              gap: 32,
+              display: "flex",
+              flexDirection: "column",
+            }}
+          >
+            {" "}
+            <h2 className="text-[34px] sm:text-[34px] mt-[24px] font-extrabold text-blue-900 text-left mb-0">
+             Our Core Expertise
+            </h2>
+            <div className="mb-12 lg:mb-16">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div className="bg-white p-6 rounded-lg transition-shadow duration-300 transform hover:-translate-y-1">
+                  <h3 className="text-2xl font-bold text-blue-700 mb-4 border-b-2 border-blue-300 pb-2">
+                    Testing
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    Reduce risks, shorten time to market, and test the quality,
+                    safety, and performance of your products against relevant
+                    health, safety, and regulatory standards with our team of
+                    professionals and network of testing facilities.
+                  </p>
+                </div>
+
+                <div className="bg-white p-6 rounded-lg transition-shadow duration-300 transform hover:-translate-y-1">
+                  <h3 className="text-2xl font-bold text-blue-700 mb-4 border-b-2 border-blue-300 pb-2">
+                    Inspection
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    Control quantity and quality, and meet all relevant
+                    regulatory requirements across different sectors and markets
+                    with our world-leading inspection and verification services.
+                  </p>
+                </div>
+
+                <div className="bg-white p-6 rounded-lg transition-shadow duration-300 transform hover:-translate-y-1">
+                  <h3 className="text-2xl font-bold text-blue-700 mb-4 border-b-2 border-blue-300 pb-2">
+                    Certification
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    Mitigate risks, improve efficiency and compliance, and
+                    ensure best practices with audits and certification from
+                    West Hova.
+                  </p>
+                </div>
+
+                {/* <div className="bg-white p-6 rounded-lg transition-shadow duration-300 transform hover:-translate-y-1">
+                  <h3 className="text-2xl font-bold text-blue-700 mb-4 border-b-2 border-blue-300 pb-2">
+                    Consulting
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    Our team provides strategic guidance to help organizations
+                    streamline processes, optimize performance, and ensure
+                    compliance with international standards.
+                  </p>
+                </div> */}
+
+                <div className="bg-white p-6 rounded-lg transition-shadow duration-300 transform hover:-translate-y-1">
+                  <h3 className="text-2xl font-bold text-blue-700 mb-4 border-b-2 border-blue-300 pb-2">
+                    Trainings and Capacity Building Consultancy
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    We design and deliver specialized training programs aimed at
+                    enhancing skills, knowledge, and professional capacity for
+                    individuals and organizations across various industries.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <p className="mt-10 text-[16px] text-gray-800 text-center bg-blue-100 p-4 rounded-lg">
+              Our specialist audit service teams offer you global experience in
+              every industry and sector to ensure that your projects, products,
+              processes and operations meet and exceed the market regulations
+              and standards required.
+            </p>
           </div>
         </div>
       </div>

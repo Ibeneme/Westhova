@@ -1,20 +1,25 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import { AiOutlineClose } from "react-icons/ai";
 import { FaArrowRightLong } from "react-icons/fa6";
-
 import "./Navbar.css";
 import logo from "../../assets/logo.png";
-// import { useTheme } from "../../context/ThemeProvider";
-// import { MdDarkMode, MdLightMode } from "react-icons/md";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
-  // const { isDark, toggleTheme } = useTheme();
+  // detect scroll
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
-    <nav className="navbar">
+    <nav className={`navbarr ${scrolled ? "scrolled" : ""}`}>
       <div className="navbar-container">
         <NavLink to="/" className="logo">
           <img
@@ -40,42 +45,19 @@ const Navbar = () => {
             { name: "Our Services", path: "/services" },
             { name: "Contact Us", path: "/contact-us" },
           ].map(({ name, path }) => (
-            <li key={name} className="">
+            <li key={name}>
               <NavLink
                 to={path}
                 className={({ isActive }) => (isActive ? "active" : "")}
                 onClick={() => setIsOpen(false)}
-                style={{ width: "100%" }}
               >
                 <div className="nav-item">
-                  <p className="nav-item-p"> {name}</p>
-
-                  {isOpen && (
-                    <FaArrowRightLong size={14} className="mode-arrow" />
-                  )}
+                  <p className="nav-item-p">{name}</p>
+                  {isOpen && <FaArrowRightLong size={14} className="mode-arrow" />}
                 </div>
               </NavLink>
             </li>
           ))}
-
-          {/* <li className="theme-toggle-li">
-          <button 
-              onClick={toggleTheme}
-              className="theme-toggle-button"
-            >
-              {isDark ? (
-  
-                <>
-                <span>  <MdLightMode size={24} /></span> 
-                </>
-              ) : (
-   
-                <>
-                <span>  <MdDarkMode size={24} /> </span>
-                </>
-              )}
-            </button>
-          </li> */}
         </ul>
       </div>
     </nav>
