@@ -93,7 +93,7 @@ const ServicesApproachSection: React.FC = () => {
           <h2
             className={`text-5xl font-extrabold ${primaryDark} mb-16 relative inline-block pb-3`}
           >
-            Our Key Service Pillars
+            Our Core Expertise
             <span
               className={`absolute bottom-0 left-1/2 -translate-x-1/2 w-24 h-1.5 ${accentColor} rounded-full`}
             ></span>
