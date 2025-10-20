@@ -22,7 +22,7 @@ const ServiceMarqueeSection: React.FC<ServiceMarqueeSectionProps> = ({
       <div className="flex flex-col gap-[100px]">
         <div className="marquee-wrapper" style={{ color: textColor }}>
           <div className="marquee-left">
-            {Array.from({ length: 9 }).map((_, index) => (
+            {Array.from({ length: 21 }).map((_, index) => (
               <span
                 key={index}
                 className="marquee-text"

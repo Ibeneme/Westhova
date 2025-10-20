@@ -17,12 +17,12 @@
   }
   
   .marquee-left {
-    animation: scroll-left 72s linear infinite;
+    animation: scroll-left 140s linear infinite;
     display: inline-flex;
   }
   
   .marquee-right {
-    animation: scroll-right 72s linear infinite;
+    animation: scroll-right 140s linear infinite;
     display: inline-flex;
   }
   
