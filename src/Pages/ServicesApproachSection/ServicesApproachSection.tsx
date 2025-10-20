@@ -67,52 +67,49 @@ const ServicesApproachSection: React.FC = () => {
             ></span>
           </h2>
 
-          <div className="relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {[
-              {
-                title:
-                  "Alternative Hydrocarbon Transport Consultancy & Accounting",
-                icon: FaShippingFast,
-                color: accentColor,
-              },
-              {
-                title: "Asset Integrity & Maintenance Management",
-                icon: FaCogs,
-                color: "text-green-700",
-              },
-              {
-                title: "Process Measurement Specialty Units & Packages",
-                icon: FaFlask,
-                color: "text-indigo-700",
-              },
-              {
-                title: "Procurement & Supply Chain Management",
-                icon: FaChartLine,
-                color: accentColor,
-              },
-              {
-                title: "Trainings and Capacity Building Consultancy",
-                icon: FaCheckDouble,
-                color: "text-yellow-500",
-              },
-            ].map((service, index) => (
-              <div
-                key={index}
-                className={`
-                bg-gray-50 p-6 
-                           text-center flex flex-col items-center justify-start rounded-md transition-all duration-200 hover:bg-gray-100`}
-              >
-                <div className={`${service.color} mb-4 p-3 rounded-full`}>
-                  {React.createElement(service.icon, {
-                    className: "w-10 h-10 mx-auto",
-                  })}
-                </div>
-                <h3 className={`text-xl font-bold ${primaryDark} pt-4`}>
-                  {service.title}
-                </h3>
-              </div>
-            ))}
-          </div>
+          <div className="relative flex flex-row overflow-x-auto gap-6 scrollbar-hide py-4">
+  {[
+    {
+      title: "Alternative Hydrocarbon Transport Consultancy & Accounting",
+      icon: FaShippingFast,
+      color: accentColor,
+    },
+    {
+      title: "Asset Integrity & Maintenance Management",
+      icon: FaCogs,
+      color: "text-green-700",
+    },
+    {
+      title: "Process Measurement Specialty Units & Packages",
+      icon: FaFlask,
+      color: "text-indigo-700",
+    },
+    {
+      title: "Procurement & Supply Chain Management",
+      icon: FaChartLine,
+      color: accentColor,
+    },
+    {
+      title: "Trainings and Capacity Building Consultancy",
+      icon: FaCheckDouble,
+      color: "text-yellow-500",
+    },
+  ].map((service, index) => (
+    <div
+      key={index}
+      className="min-w-[250px] bg-gray-50 p-6 text-center flex flex-col items-center justify-start rounded-md transition-all duration-200 hover:bg-gray-100 shadow-sm"
+    >
+      <div className={`${service.color} mb-4 p-3 rounded-full`}>
+        {React.createElement(service.icon, {
+          className: "w-10 h-10 mx-auto",
+        })}
+      </div>
+      <h3 className={`text-lg font-bold ${primaryDark} pt-4`}>
+        {service.title}
+      </h3>
+    </div>
+  ))}
+</div>
         </div>
         <br /> <br />
         <h2 className="text-[64px] sm:text-[64px] mt-[120px] font-extrabold text-blue-900 text-left mb-0">
